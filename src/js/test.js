@@ -1,4 +1,4 @@
-import demo from '../app';
+import demo from './app';
 
 test('', () => {
   const result = demo('hi');
