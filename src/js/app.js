@@ -1,11 +1,13 @@
 // TODO: write code here
 
-// comment this to pass build
-// const unusedVariable = 'variable';
+const goblin = document.getElementsByClassName('goblin');
 
-// for demonstration purpose only
-export default function demo(value) {
-  return value;
-}
+const random = () => {
+  const randomGoblin = Math.floor(Math.random() * goblin.length);
+  if (document.querySelector('.goblin_active')) {
+    document.querySelector('.goblin_active').classList.remove('goblin_active');
+  }
+  goblin[randomGoblin].classList.add('goblin_active');
+};
 
-// console.log('app.js included');
+setInterval(random, 1000);
