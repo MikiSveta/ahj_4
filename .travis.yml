@@ -9,14 +9,6 @@ install:
 script:
   - npm run build
   
- deploy:
-  provider: pages
-  skip_cleanup: true
-  github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
-  keep_history: true
-  on:
-    branch: gh-pages 
-  
 after_success:
   - git config --global credential.helper store
   - git config --global user.name Travis-ci
@@ -30,9 +22,6 @@ branches:
   only:
   - gh-pages
   - /.*/
-
-  # blocklist
-branches:
   except:
   - gh-pages
 
