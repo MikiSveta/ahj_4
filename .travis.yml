@@ -21,3 +21,8 @@ branches:
   only:
   - gh-pages
   - /.*/
+
+  # blocklist
+branches:
+  except:
+  - gh-pages
