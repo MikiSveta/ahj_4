@@ -19,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MikiSveta/ahj_2.git"
+    "url": "git+https://github.com/MikiSveta/ahj_2.1.git"
   },
   "author": "MikiSveta",
   "license": "ISC",
@@ -50,7 +50,7 @@
     "core-js": "^3.21.1"
   },
   "bugs": {
-    "url": "https://github.com/MikiSveta/ahj_2/issues"
+    "url": "https://github.com/MikiSveta/ahj_2.1/issues"
   },
-  "homepage": "https://github.com/MikiSveta/ahj_2#readme"
+  "homepage": "https://github.com/MikiSveta/ahj_2.1#readme"
 }
