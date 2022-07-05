@@ -26,9 +26,34 @@ module.exports = {
         ],
       },
       {
-        test: /\.css$/,
+        test: /\.(scss|css|sass)$/,
         use: [
           MiniCssExtractPlugin.loader, 'css-loader',
+        ],
+      },
+      {
+        test: /\.(png|svg|jpe?g|gif)$/,
+        include: /img/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'img/',
+              publicPath: 'img/',
+            },
+          },
+        ],
+      },
+      {
+        test: /\.(txt)$/i,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: 'licenses.txt',
+            },
+          },
         ],
       },
       {
